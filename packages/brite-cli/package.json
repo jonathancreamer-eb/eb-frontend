@@ -1,0 +1,28 @@
+{
+  "name": "@eventbrite/brite-cli",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "bin": {
+    "brite": "./bin/brite.js"
+  },
+  "scripts": {
+    "dev": "tsc --watch",
+    "build": "tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@eventbrite/brite-server": "file:../brite-server",
+    "@eventbrite/brite-preset-react": "file:../brite-preset-react",
+    "@eventbrite/brite-preset-react-node": "file:../brite-preset-react-node",
+    "commander": "^2.16.0",
+    "reflect-metadata": "^0.1.12",
+    "typescript": "^2.9.2"
+  },
+  "devDependencies": {
+    "@types/node": "^10.5.5",
+    "ts-node": "^7.0.0"
+  }
+}

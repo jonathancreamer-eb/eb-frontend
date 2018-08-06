@@ -1,0 +1,26 @@
+{
+  "name": "@eventbrite/brite-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/express": "^4.16.0",
+    "express": "^4.16.3",
+    "inversify": "^4.13.0",
+    "path-to-regexp": "^2.2.1",
+    "reflect-metadata": "^0.1.12"
+  },
+  "devDependencies": {
+    "ts-node": "^7.0.0",
+    "tslint": "^5.11.0",
+    "typescript": "^2.9.2"
+  }
+}

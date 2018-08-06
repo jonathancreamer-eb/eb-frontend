@@ -1,5 +1,5 @@
 {
-    "name": "monorepo-demo",
+    "name": "core-js",
     "version": "1.0.0",
     "description": "",
     "main": "index.js",
@@ -10,11 +10,6 @@
     "keywords": [],
     "author": "",
     "license": "ISC",
-    "dependencies": {
-        "@eventbrite/core": "file:packages/core",
-        "@eventbrite/sandbox2": "file:packages/sandbox2",
-        "react-dom": "^16.4.1"
-    },
     "devDependencies": {
         "@types/node": "^10.3.6",
         "@types/react": "^16.4.2",
@@ -31,5 +26,8 @@
         "webpack": "^4.12.1",
         "webpack-cli": "^3.0.8",
         "webpack-dev-server": "^3.1.4"
+    },
+    "dependencies": {
+        "lerna": "^3.0.0-rc.0"
     }
 }

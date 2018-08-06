@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "module": "commonjs",
+        "jsx": "react",
+        "esModuleInterop": true,
+        "outDir": "dist",
+        "declaration": true,
+        "experimentalDecorators": true,
+        "lib": [
+            "es6"
+        ],
+    },
+    "include": [
+        "src"
+    ]
+}

@@ -1,0 +1,39 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: simple
+  labels:
+    app: simple
+spec:
+  type: LoadBalancer
+  ports:
+  - port: 3000
+  selector:
+    app: simple
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: simple
+  labels:
+    app: simple
+spec:
+  replicas: 1
+  revisionHistoryLimit: 2
+  selector:
+    matchLabels:
+      app: simple
+  template:
+    metadata:
+      labels:
+        app: simple
+    spec:
+      containers:
+      - name: simple
+        # We use the lp-service-id for the image name because multiple
+        # components may share the same image. See the Epicenter Pipeline Spec
+        # for more details.
+        image: eventbrite/simple
+        imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 3000

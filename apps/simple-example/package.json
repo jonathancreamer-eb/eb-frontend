@@ -1,0 +1,24 @@
+{
+  "name": "simple",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "brite build",
+    "start": "brite start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@eventbrite/brite-cli": "file:../../packages/brite-cli",
+    "@eventbrite/brite-preset-react": "file:../../packages/brite-preset-react",
+    "@types/react": "^16.4.7",
+    "@types/react-dom": "^16.0.6",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2"
+  },
+  "brite": {
+    "preset": "react"
+  }
+}

@@ -1,0 +1,22 @@
+{
+    "compilerOptions": {
+        "target": "es5",
+        "module": "commonjs",
+        "jsx": "react",
+        "esModuleInterop": true,
+        "outDir": "dist",
+        "declaration": true,
+        "experimentalDecorators": true,
+        "lib": [
+            "dom",
+            "es6"
+        ],
+        "downlevelIteration": true,
+        "types": [
+            "reflect-metadata"
+        ]
+    },
+    "include": [
+        "src"
+    ]
+}
