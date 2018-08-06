@@ -5,3 +5,4 @@ export declare class Britepack {
     constructor(config: webpack.Configuration);
     createMiddleware(): any;
 }
+export * from './loaders';

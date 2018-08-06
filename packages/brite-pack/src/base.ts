@@ -2,7 +2,7 @@ import path from 'path';
 import webpack from 'webpack';
 
 const config: webpack.Configuration = {
-    devtool: '#@cheap-module-eval-source-map',
+    devtool: 'source-map',
     mode: 'development',
     output: {
         chunkFilename: '[name]-chunk.js',

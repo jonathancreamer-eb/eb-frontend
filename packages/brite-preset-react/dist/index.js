@@ -40,14 +40,15 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 require("reflect-metadata");
 var brite_server_1 = require("@eventbrite/brite-server");
+var path_1 = __importDefault(require("path"));
 var react_1 = __importDefault(require("react"));
 var server_1 = require("react-dom/server");
 var brite_pack_1 = require("@eventbrite/brite-pack");
+var css_modules_require_hook_1 = __importDefault(require("css-modules-require-hook"));
 var config_1 = __importDefault(require("./webpack/config"));
 var appHandler = function (req, res, next) {
-    var reactAppPath = process.cwd() + "/src/app/app";
+    var reactAppPath = process.cwd() + "/src/app/components/app";
     var ReactApp = require(reactAppPath).default;
-    console.log(ReactApp);
     var body = server_1.renderToString(react_1.default.createElement(ReactApp));
     var layoutPath = process.cwd() + "/src/app/layouts";
     var ReactLayout = require(layoutPath).default;
@@ -65,6 +66,10 @@ var BritePresetReact = /** @class */ (function () {
             return __generator(this, function (_a) {
                 switch (_a.label) {
                     case 0:
+                        css_modules_require_hook_1.default({
+                            generateScopedName: '[name]__[local]___[hash:base64:5]',
+                            rootDir: path_1.default.resolve(process.cwd(), process.env.NODE_ENV === 'production' ? 'dist' : 'src'),
+                        });
                         server = brite_server_1.start({
                             port: process.env.PORT || 3000,
                         });

@@ -1,4 +1,7 @@
 "use strict";
+function __export(m) {
+    for (var p in m) if (!exports.hasOwnProperty(p)) exports[p] = m[p];
+}
 var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
@@ -28,3 +31,4 @@ var Britepack = /** @class */ (function () {
     return Britepack;
 }());
 exports.Britepack = Britepack;
+__export(require("./loaders"));

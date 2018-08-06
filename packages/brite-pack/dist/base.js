@@ -5,7 +5,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 var path_1 = __importDefault(require("path"));
 var config = {
-    devtool: '#@cheap-module-eval-source-map',
+    devtool: 'source-map',
     mode: 'development',
     output: {
         chunkFilename: '[name]-chunk.js',
