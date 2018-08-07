@@ -5,11 +5,5 @@
     },
     "include": [
         "src"
-    ],
-    "references": [
-        { "path": "../brite-pack" },
-        { "path": "../brite-server" },
-        { "path": "../brite-preset-react" },
-        { "path": "../brite-preset-react-node" },
     ]
 }

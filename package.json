@@ -4,7 +4,7 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "build": "tsc --build",
+        "build": "lerna run build",
         "dev": "tsc --build --watch",
         "start": "ts-node src/server"
     },
