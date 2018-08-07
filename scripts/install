@@ -1,2 +1,5 @@
-npm i packages/*
+#!/bin/bash
+
+for directory in ./packages/*/ ; do (cd "$directory" && npm i); done
+
 npm i
