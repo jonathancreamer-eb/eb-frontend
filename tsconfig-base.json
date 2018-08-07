@@ -1,0 +1,18 @@
+{
+    "compilerOptions": {
+        "composite": true,
+        "pretty": true,
+        "target": "es5",
+        "module": "commonjs",
+        "jsx": "react",
+        "esModuleInterop": true,
+        "declaration": true,
+        "experimentalDecorators": true,
+        "noUnusedLocals": true,
+        "lib": [
+            "dom",
+            "es6"
+        ],
+        "downlevelIteration": true
+    }
+}

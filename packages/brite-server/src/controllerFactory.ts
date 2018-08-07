@@ -44,6 +44,10 @@ export class ControllerFactory implements IControllerFactory {
         
                         try {
                             const result = await controller[route.action]();
+
+                            if (result) {
+                                // do something with result
+                            }
                         } catch(e) {
                             next(e);
                         }

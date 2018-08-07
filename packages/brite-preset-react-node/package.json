@@ -19,7 +19,6 @@
     "reflect-metadata": "^0.1.12"
   },
   "devDependencies": {
-    "@types/node": "^10.5.5",
-    "typescript": "^3.0.1"
+    "@types/node": "^10.5.5"
   }
 }

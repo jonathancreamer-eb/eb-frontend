@@ -1,0 +1,13 @@
+{
+    "files": [],
+    "include": [],
+    "references": [
+        { "path": "./packages/brite-cli" },
+        { "path": "./packages/brite-core" },
+        { "path": "./packages/brite-pack" },
+        { "path": "./packages/brite-preset-package" },
+        { "path": "./packages/brite-preset-react" },
+        { "path": "./packages/brite-preset-react-node" },
+        { "path": "./packages/brite-server" },
+    ]
+}

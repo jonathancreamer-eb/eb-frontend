@@ -1,6 +1,5 @@
-import express from 'express';
-import { request } from 'http';
 import { injectable, inject } from 'inversify';
+import express from "express";
 import { HTTP_CONTEXT } from './types';
 import { IHttpContext } from './httpContext';
 
@@ -12,11 +11,11 @@ export interface IHttpController {
 export abstract class HttpController implements IHttpController {
     public context: IHttpContext;
 
-    public get response() {
+    public get response(): express.Response {
         return this.context.response;
     }
 
-    public get request() {
+    public get request(): express.Request {
         return this.context.request;
     }
 

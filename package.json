@@ -4,30 +4,20 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "dev": "ts-node bin/dev",
+        "build": "tsc --build",
+        "dev": "tsc --build --watch",
         "start": "ts-node src/server"
     },
     "keywords": [],
     "author": "",
     "license": "ISC",
     "devDependencies": {
-        "@types/node": "^10.3.6",
-        "@types/react": "^16.4.2",
-        "@types/react-dom": "^16.0.6",
-        "@types/webpack": "^4.4.3",
-        "babel-cli": "^6.26.0",
-        "babel-loader": "^7.1.4",
-        "babel-preset-env": "^1.7.0",
-        "babel-preset-react": "^6.24.1",
-        "prettier": "^1.13.6",
-        "ts-loader": "^4.4.1",
+        "@types/node": "^10.5.7",
         "ts-node": "^7.0.0",
-        "typescript": "^2.9.2",
-        "webpack": "^4.12.1",
-        "webpack-cli": "^3.0.8",
-        "webpack-dev-server": "^3.1.4"
+        "typescript": "^3.1.0-dev.20180807"
     },
     "dependencies": {
-        "lerna": "^3.0.0-rc.0"
+        "lerna": "^3.0.0-rc.0",
+        "reflect-metadata": "^0.1.12"
     }
 }

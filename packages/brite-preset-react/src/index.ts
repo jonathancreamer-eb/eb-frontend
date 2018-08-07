@@ -43,4 +43,7 @@ export default class BritePresetReact {
     
         await app(server);
     }
+
+    public async build() {}
+    public async test() {}
 }

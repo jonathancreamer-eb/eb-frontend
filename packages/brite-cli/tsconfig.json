@@ -1,16 +1,15 @@
 {
+    "extends": "../../tsconfig-base",
     "compilerOptions": {
-        "target": "es5",
-        "module": "commonjs",
-        "jsx": "react",
-        "esModuleInterop": true,
         "outDir": "dist",
-        "declaration": true,
-        "lib": [
-            "es6"
-        ]
     },
     "include": [
         "src"
+    ],
+    "references": [
+        { "path": "../brite-pack" },
+        { "path": "../brite-server" },
+        { "path": "../brite-preset-react" },
+        { "path": "../brite-preset-react-node" },
     ]
 }
