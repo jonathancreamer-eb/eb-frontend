@@ -24,6 +24,6 @@
     "typescript": "^3.0.0"
   },
   "brite": {
-    "preset": "reactNode"
+    "preset": "react-node"
   }
 }

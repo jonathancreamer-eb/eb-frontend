@@ -1,5 +1,6 @@
 import 'reflect-metadata';
 import { start } from '@eventbrite/brite-server';
+import { IBritePreset } from '@eventbrite/brite-core';
 import path from 'path';
 import React from 'react';
 import { renderToString } from 'react-dom/server';
@@ -21,7 +22,7 @@ const appHandler = (req, res, next) => {
     res.send(staticMarkup);
 };
 
-export default class BritePresetReact {
+export default class BritePresetReact implements IBritePreset {
     public async start() {
         hook({
             generateScopedName: '[name]__[local]___[hash:base64:5]',
@@ -45,5 +46,6 @@ export default class BritePresetReact {
     }
 
     public async build() {}
+
     public async test() {}
 }

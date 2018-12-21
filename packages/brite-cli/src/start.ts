@@ -1,6 +1,6 @@
 const presets = {
   react: '@eventbrite/brite-preset-react',
-  reactNode: '@eventbrite/brite-preset-react-node',
+  'react-node': '@eventbrite/brite-preset-react-node',
 };
 
 export const init = (options) => {
