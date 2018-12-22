@@ -1,0 +1,70 @@
+<testsuites name="jest tests" tests="30" failures="0" time="20.128999999999998">
+  <testsuite name="Analytics Middleware" errors="0" failures="0" skipped="0" timestamp="2018-10-04T20:16:25" time="3.191" tests="7">
+    <testcase classname="Analytics Middleware when action is not an analytics action passes through non-meta actions" name="Analytics Middleware when action is not an analytics action passes through non-meta actions" time="0.023">
+    </testcase>
+    <testcase classname="Analytics Middleware when action is not an analytics action passes through non-analytics action" name="Analytics Middleware when action is not an analytics action passes through non-analytics action" time="0.001">
+    </testcase>
+    <testcase classname="Analytics Middleware when action is a proper analytics action calls the getDefaults function once" name="Analytics Middleware when action is a proper analytics action calls the getDefaults function once" time="0.001">
+    </testcase>
+    <testcase classname="Analytics Middleware when action is a proper analytics action calls the getDefaults function with the state" name="Analytics Middleware when action is a proper analytics action calls the getDefaults function with the state" time="0.021">
+    </testcase>
+    <testcase classname="Analytics Middleware when action is a proper analytics action calls getEventTracker with the provided user and event id" name="Analytics Middleware when action is a proper analytics action calls getEventTracker with the provided user and event id" time="0.002">
+    </testcase>
+    <testcase classname="Analytics Middleware when action is a proper analytics action calls trackEventFromState with the provided payload" name="Analytics Middleware when action is a proper analytics action calls trackEventFromState with the provided payload" time="0.002">
+    </testcase>
+    <testcase classname="Analytics Middleware when action is a proper analytics action calls trackEventFromState with any custom dimensions" name="Analytics Middleware when action is a proper analytics action calls trackEventFromState with any custom dimensions" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="generateProperties" errors="0" failures="0" skipped="0" timestamp="2018-10-04T20:16:28" time="0.883" tests="6">
+    <testcase classname="generateProperties should correctly make user and eventId dimensions" name="generateProperties should correctly make user and eventId dimensions" time="0.015">
+    </testcase>
+    <testcase classname="generateProperties should handle userId and eventId not being provided" name="generateProperties should handle userId and eventId not being provided" time="0.004">
+    </testcase>
+    <testcase classname="trackEventFromState should correctly grab the userId from the state" name="trackEventFromState should correctly grab the userId from the state" time="0.001">
+    </testcase>
+    <testcase classname="trackEventFromState should correctly grab the eventId from the state" name="trackEventFromState should correctly grab the eventId from the state" time="0.001">
+    </testcase>
+    <testcase classname="trackEventFromState should allow dimension overrides" name="trackEventFromState should allow dimension overrides" time="0">
+    </testcase>
+    <testcase classname="getEventTracker should generate a function that prepopulates the event and user dimensions" name="getEventTracker should generate a function that prepopulates the event and user dimensions" time="0.001">
+    </testcase>
+  </testsuite>
+  <testsuite name="search functional tests" errors="0" failures="0" skipped="0" timestamp="2018-10-04T20:16:25" time="6.756" tests="6">
+    <testcase classname="search functional tests should render search results when typing in auto-complete field" name="search functional tests should render search results when typing in auto-complete field" time="1.324">
+    </testcase>
+    <testcase classname="header should render the search box by default if we are in any page but the root" name="header should render the search box by default if we are in any page but the root" time="0.212">
+    </testcase>
+    <testcase classname="header should not render the search box if we are in the root page" name="header should not render the search box if we are in the root page" time="0.159">
+    </testcase>
+    <testcase classname="header should not render the search box when hideSearchBar is true" name="header should not render the search box when hideSearchBar is true" time="0.215">
+    </testcase>
+    <testcase classname="header should contain the additional menus with organize menu on homepage" name="header should contain the additional menus with organize menu on homepage" time="0.24">
+    </testcase>
+    <testcase classname="header should contain the additional menus with no organize menu out of homepage" name="header should contain the additional menus with no organize menu out of homepage" time="0.246">
+    </testcase>
+  </testsuite>
+  <testsuite name="simple cases" errors="0" failures="0" skipped="0" timestamp="2018-10-04T20:16:24" time="9.299" tests="11">
+    <testcase classname="simple cases renders a Structure with a ConsumerHeader &amp; no footer by default" name="simple cases renders a Structure with a ConsumerHeader &amp; no footer by default" time="0.99">
+    </testcase>
+    <testcase classname="simple cases renders a Structure passing through props to it" name="simple cases renders a Structure passing through props to it" time="0.121">
+    </testcase>
+    <testcase classname="header renders a Structure without a header when explicitly turned off" name="header renders a Structure without a header when explicitly turned off" time="0.031">
+    </testcase>
+    <testcase classname="header renders a Structure with passed in header" name="header renders a Structure with passed in header" time="0.027">
+    </testcase>
+    <testcase classname="header renders a Structure with passed in additional header content" name="header renders a Structure with passed in additional header content" time="0.282">
+    </testcase>
+    <testcase classname="header renders a Structure with default header and without search bar" name="header renders a Structure with default header and without search bar" time="0.341">
+    </testcase>
+    <testcase classname="header search checks valid linked URLs" name="header search checks valid linked URLs" time="0.279">
+    </testcase>
+    <testcase classname="header search checks invalid linked URLs" name="header search checks invalid linked URLs" time="0.263">
+    </testcase>
+    <testcase classname="header search checks valid linked paths" name="header search checks valid linked paths" time="0.259">
+    </testcase>
+    <testcase classname="footer renders a Structure with default GlobalFooter when footer links are passed in" name="footer renders a Structure with default GlobalFooter when footer links are passed in" time="1.135">
+    </testcase>
+    <testcase classname="footer renders a Structure with passed in footer" name="footer renders a Structure with passed in footer" time="0.281">
+    </testcase>
+  </testsuite>
+</testsuites>

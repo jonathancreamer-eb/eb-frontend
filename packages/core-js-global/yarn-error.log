@@ -1,0 +1,60 @@
+Arguments: 
+  /Users/jonathancreamer/.nvm/versions/node/v8.11.3/bin/node /Users/jonathancreamer/.nvm/versions/node/v8.11.3/bin/yarn
+
+PATH: 
+  ./node_modules/.bin:/Users/jonathancreamer/.evbdevtools/arcanist/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:./node_modules/.bin:/Users/jonathancreamer/.evbdevtools/arcanist/bin:/Users/jonathancreamer/.nvm/versions/node/v8.11.3/bin
+
+Yarn version: 
+  1.7.0
+
+Node version: 
+  8.11.3
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/@eventbrite%2fbrite-cli: Not found
+      at Request.params.callback [as _callback] (/Users/jonathancreamer/.nvm/versions/node/v8.11.3/lib/node_modules/yarn/lib/cli.js:65656:18)
+      at Request.self.callback (/Users/jonathancreamer/.nvm/versions/node/v8.11.3/lib/node_modules/yarn/lib/cli.js:134675:22)
+      at emitTwo (events.js:126:13)
+      at Request.emit (events.js:214:7)
+      at Request.<anonymous> (/Users/jonathancreamer/.nvm/versions/node/v8.11.3/lib/node_modules/yarn/lib/cli.js:135658:10)
+      at emitOne (events.js:116:13)
+      at Request.emit (events.js:211:7)
+      at IncomingMessage.<anonymous> (/Users/jonathancreamer/.nvm/versions/node/v8.11.3/lib/node_modules/yarn/lib/cli.js:135578:12)
+      at Object.onceWrapper (events.js:313:30)
+      at emitNone (events.js:111:20)
+
+npm manifest: 
+  {
+    "name": "core-js-global",
+    "private": true,
+    "version": "1.0.0",
+    "main": "index.js",
+    "license": "MIT",
+    "scripts": {
+      "test": "brite test"
+    },
+    "dependencies": {
+      "classnames": "^2.2.5",
+      "eventbrite": "^1.0.2",
+      "lodash": "^4.17.5",
+      "prop-types": "^15.6.0"
+    },
+    "peerDependencies": {
+      "eventbrite_design_system": "http://packages.evbops.com:8889/package/eventbrite_design_system/66.6.0",
+      "js-utils": "http://packages.evbops.com:8889/package/js-utils/8.0.1",
+      "react": ">=15.0.0 <16.0.0"
+    },
+    "devDependencies": {
+      "@eventbrite/brite-cli": "1.0.0",
+      "react": "15.4.2"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

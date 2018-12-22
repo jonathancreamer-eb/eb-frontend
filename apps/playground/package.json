@@ -1,0 +1,30 @@
+{
+  "name": "briteserver-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "brite start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@eventbrite/brite-cli": "file:../../packages/brite-cli",
+    "@eventbrite/brite-preset-react-node": "file:../../packages/brite-preset-react-node",
+    "@eventbrite/brite-server": "file:../../packages/brite-server",
+    "prop-types": "^15.6.2",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1"
+  },
+  "devDependencies": {
+    "@types/node": "^10.5.2",
+    "@types/react": "^16.4.6",
+    "@types/react-dom": "^16.0.6",
+    "tslint": "^5.11.0",
+    "typescript": "^3.0.0"
+  },
+  "brite": {
+    "preset": "react-node"
+  }
+}

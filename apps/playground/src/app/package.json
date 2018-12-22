@@ -1,0 +1,18 @@
+{
+    "name": "playground",
+    "version": "0.0.1",
+    "private": true,
+    "scripts": {
+        "start": "brite start",
+        "build": "brite build",
+        "test": "brite test"
+    },
+    "devDependencies": {
+        "@eventbrite/brite-cli": "1.0.0"
+    },
+    "dependencies": {
+        "core-js-global": "file:../../packages/core-js-global",
+        "eventbrite_design_system": "http://packages.evbops.com:8889/package/eventbrite_design_system/66.9.1",
+        "js-utils": "http://packages.evbops.com:8889/package/js-utils/9.0.1"
+    }
+}

@@ -1,0 +1,33 @@
+{
+  "name": "core-js-global",
+  "private": true,
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "test": "brite test"
+  },
+  "dependencies": {
+    "classnames": "^2.2.5",
+    "eventbrite": "^1.0.2",
+    "lodash": "^4.17.5",
+    "prop-types": "^15.6.0",
+    "react-redux": "4.4.5",
+    "react-router": "^4.3.1",
+    "redux": "^4.0.1",
+    "redux-form": "6.2.0",
+    "redux-thunk": "^2.3.0"
+  },
+  "peerDependencies": {
+    "eventbrite_design_system": "http://packages.evbops.com:8889/package/eventbrite_design_system/66.6.0",
+    "js-utils": "http://packages.evbops.com:8889/package/js-utils/8.0.1",
+    "react": ">=15.0.0 <16.0.0"
+  },
+  "devDependencies": {
+    "@eventbrite/brite-cli": "file:../brite-cli",
+    "eventbrite_design_system": "http://packages.evbops.com:8889/package/eventbrite_design_system/71.0.7",
+    "js-utils": "http://packages.evbops.com:8889/package/js-utils/10.1.0",
+    "react": "15.4.2",
+    "react-dom": "15.4.2"
+  }
+}
