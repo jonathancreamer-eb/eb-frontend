@@ -24,6 +24,7 @@ export abstract class HttpController implements IHttpController {
     }
 
     json(...args) {
+        this.response.setHeader('content-type', 'application/json');
         this.response.json(...args);
     }
 

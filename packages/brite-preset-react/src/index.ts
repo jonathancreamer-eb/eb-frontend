@@ -4,7 +4,7 @@ import { IBritePreset } from '@eventbrite/brite-core';
 import path from 'path';
 import React from 'react';
 import { renderToString } from 'react-dom/server';
-import { Britepack } from '@eventbrite/brite-pack';
+import { britepack } from '@eventbrite/brite-pack';
 import hook from 'css-modules-require-hook';
 import config from './webpack/config';
 
@@ -38,7 +38,7 @@ export default class BritePresetReact implements IBritePreset {
         const applicationPath = `${process.cwd()}/src`;
         const app = require(applicationPath).default;
 
-        const britepack = new Britepack(config);
+        const britepack = britepack(config);
         server.app.use(britepack.createMiddleware())
         server.app.get('*', appHandler);
     
